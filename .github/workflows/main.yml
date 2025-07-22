@@ -27,3 +27,6 @@ jobs:
 
     - name: Build app
       run: npm run build || echo "No build script. Skipping..."
+      
+    - name: Run ESLint
+      run: npx eslint . 
